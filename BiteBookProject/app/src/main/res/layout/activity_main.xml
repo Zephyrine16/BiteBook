@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        />
+
+    <ImageView
+        android:id="@+id/roundedRect"
+        android:src="@drawable/rounded_rect_with_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="210dp"
+        />
+
+    <TextView
+        android:id="@+id/biteBookText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bite_book_name"
+        android:fontFamily="@font/chewy_regular"
+        android:textSize="48sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="214dp"
+        />
+    
+    <TextView
+        android:id="@+id/signInTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather_regular"
+        android:layout_below="@+id/biteBookText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="@string/sign_in_button_text"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/signInTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:background="@drawable/rounded_rect_input"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password"
+        android:inputType="text"
+        android:background="@drawable/rounded_rect_input"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        tools:ignore="TextFields"
+        />
+
+    <Button
+        android:id="@+id/signinButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="@string/sign_in_button_text"
+        android:fontFamily="@font/merriweather_regular"
+        android:background="@drawable/signinbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/password"
+        android:layout_marginTop="60dp"
+        />
+</RelativeLayout>

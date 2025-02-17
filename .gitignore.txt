@@ -1,0 +1,7 @@
+# Ignore IDE and build files
+.idea/
+*.iml
+*.log
+local.properties
+/build/
+/app/build/

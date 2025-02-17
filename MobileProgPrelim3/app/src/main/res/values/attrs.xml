@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Theme">
+        <attr name="colorBackground" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="Theme2">
+        <attr name="colorSigninAccent" format="color" />
+    </declare-styleable>
+</resources>
