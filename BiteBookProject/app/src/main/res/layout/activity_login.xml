@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        />
+
+    <!--BiteBook Text Background -->
+    <ImageView
+        android:id="@+id/roundedRect"
+        android:src="@drawable/rounded_rect_with_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="200dp"
+        android:contentDescription="@string/logo_background"
+        />
+
+    <!-- BiteBook Text  -->
+    <TextView
+        android:id="@+id/biteBookText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bite_book_name"
+        android:fontFamily="@font/chewy_regular"
+        android:textSize="48sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="204dp"
+        />
+
+    <!-- Sign in Text -->
+    <TextView
+        android:id="@+id/signInTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather_regular"
+        android:layout_below="@+id/biteBookText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="@string/sign_in_button_text"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        />
+
+    <!-- Username Textbox -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:textSize="15sp"
+        android:layout_below="@id/signInTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:background="@drawable/rounded_rect_input"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp"
+        android:autofillHints="username"
+        />
+
+    <!-- Password Textbox -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:textSize="15sp"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password"
+        android:importantForAutofill="yes"
+        android:autofillHints="password"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded_rect_input"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        />
+
+    <!-- Remember Me Checkbox -->
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginStart="41dp"
+        android:buttonTint="@color/primary"
+        />
+
+    <!-- Remember Me text -->
+    <TextView
+        android:id="@+id/rememberme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remember_me"
+        android:fontFamily="@font/merriweather_regular"
+        android:layout_below="@+id/password"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="15dp"
+        android:textSize="11sp"
+        android:textColor="@color/primary"
+        />
+
+    <!-- Forgot Password -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:fontFamily="@font/merriweather_regular"
+        android:layout_below="@+id/password"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="15dp"
+        android:textSize="11sp"
+        android:textColor="@color/primary"
+        android:clickable="true"
+        />
+
+    <!-- Sign in Button -->
+    <Button
+        android:id="@+id/signinButton"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:text="@string/sign_in_button_text"
+        android:fontFamily="@font/merriweather_regular"
+        android:background="@drawable/signinbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/password"
+        android:layout_marginTop="70dp"
+        />
+
+    <!-- Or Sign In With -->
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or_sign_in_with"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/signinButton"
+        android:layout_marginTop="30dp"
+        android:textSize="11sp"
+        android:textColor="@color/accent1"
+        />
+
+    <!-- Left Line of "or sign in with" -->
+    <View
+        android:layout_width="105dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="629dp"
+        android:layout_marginStart="55dp"
+        android:background="@color/secondary"
+        />
+
+    <!-- Right Line of "or sign in with" -->
+    <View
+        android:layout_width="105dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="629dp"
+        android:layout_marginStart="250dp"
+        android:background="@color/secondary"
+        />
+
+    <!-- Google Sign In Image Button -->
+    <ImageButton
+        android:id="@+id/google_signin"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contextClickable="true"
+        android:layout_below="@id/or"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/google_logo"
+        android:backgroundTint="@color/background"
+        android:contentDescription="@string/google_login_button"
+        />
+
+    <!-- Google Sign In Text Button -->
+    <TextView
+        android:id="@+id/google_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/google_button"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/merriweather_regular"
+        android:textSize="12sp"
+        android:layout_toEndOf="@id/google_signin"
+        android:layout_below="@+id/or"
+        android:layout_marginTop="11.5dp"
+        android:layout_marginStart="5dp"
+        />
+
+    <!-- Facebook Sign In Image Button -->
+    <ImageButton
+        android:id="@+id/facebook_signin"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/or"
+        android:contextClickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="274dp"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/facebook_logo"
+        android:backgroundTint="@color/background"
+        android:contentDescription="@string/facebook_login_button"
+        />
+
+    <!-- Facebook Sign in Text Button -->
+    <TextView
+        android:id="@+id/facebook_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/or"
+        android:layout_toEndOf="@id/facebook_signin"
+        android:text="@string/facebook_button"
+        android:textStyle="bold"
+        android:fontFamily="@font/merriweather_regular"
+        android:textSize="12sp"
+        android:layout_marginTop="11.5dp"
+        android:layout_marginStart="5dp"
+        />
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/arrow_back"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/back_button"
+        />
+
+</RelativeLayout>

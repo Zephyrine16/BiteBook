@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Me Up!"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_marginTop="350dp"
+        />
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:hint="First Name"
+        android:layout_marginTop="400dp"
+        />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Last Name"
+        android:layout_below="@id/firstName"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Username"
+        android:layout_below="@id/lastName"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:layout_below="@id/username"
+        />
+
+    <EditText
+        android:id="@+id/passwordConfirmation"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Confirm Password"
+        android:layout_below="@id/password"
+        />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/passwordConfirmation"
+        android:layout_marginTop="50dp"
+        />
+
+</RelativeLayout>
