@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="primary">#FF7F50</color>
+    <color name="secondary">#FFA500</color>
+    <color name="background">#FAF3E0</color>
+    <color name="accent1">#717171</color>
+    <color name="accent2">#D9D9D9</color>
+    <color name="sigininaccent">#D4D4D4</color>
+
+    <color name="signinButton">#FF7F50</color>
+    <color name="signupButton">#FFFFFF</color>
+</resources>
