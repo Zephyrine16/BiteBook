@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        />
+
+    <RelativeLayout
+        android:id="@+id/biteBookContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp">
+
+        <!--BiteBook Text Background -->
+        <ImageView
+            android:id="@+id/roundedRect"
+            android:src="@drawable/rounded_square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/logo_background"
+            />
+
+        <!-- BiteBook Text -->
+        <TextView
+            android:id="@+id/biteBookText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/bite_book_name_2.0"
+            android:gravity="center"
+            android:fontFamily="@font/chewy_regular"
+            android:textSize="100sp"
+            android:textColor="@color/black"
+            />
+    </RelativeLayout>
+
+    <!-- BiteBook Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="150dp"
+        android:contentDescription="@string/logo"
+        />
+
+    <!-- Sign In Button -->
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/primary"
+        android:text="@string/sign_in_button_text"
+        android:textColor="@color/white"
+        android:fontFamily="@font/merriweather_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="590dp"
+        />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:text="@string/sign_up_button_text"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/merriweather_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="660dp"
+        android:backgroundTint="@color/signupButton"
+        />
+
+</RelativeLayout>
